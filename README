@@ -1,3 +1,17 @@
+To compile make sure you have following packages:
+build-essentials
+latest openjdk
+
+Commands to compile:
+make clean
+make mrproper
+make android-x86_defconfig (to build a 32-bit kernel) or make android-x86_64_defconfig (to build a 64-bit kernel)
+make -jX
+
+X=2*(no. of cores your cpu has)
+
+Now on to the routine stuff.
+
         Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
